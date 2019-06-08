@@ -1,15 +1,200 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1> Prueba cambio encabezado </h1>
+
+   <head>
+     <meta charset="utf-8">
+     <title> CIPHER CRYPTOGRAMAFUN </title>
+     <link rel="stylesheet" href="style.css" />
+   </head>
+
+   <body>
+
+     <input id= "buttonClose"
+     type= "image"
+     style="float:right"
+     src="botonCerrar.png"
+     width="50"
+     height="50"
+     type= "image"
+     oneclick= "cerrar"
+     />
+
+     <center>
+
+     <div id= "paginaInicio">
+
+       <br/>
+       <br/>
+
+      <h1> CRYPTOGRAMAFUN </h1>
+
+      <p> Bienvenido al mensajero más seguro y divertido de la Web.
+          ¿Quieres enviar un mensaje súper seguro y de una forma súper
+          divertida? ¡Hagámoslo!
+            <br/>
+          (RECUERDA: Puedes utilizar letras mayúsculas y minúsculas,
+          evita los signos de puntuación y los acentos. <br/>
+          Comparte con tu compañero el número de espacios con el que planeas cifrar
+          para que el pueda descifrarlo con facilidad. ¡Diviértete! =D )
+
+         <form>
+      		<input id= "botonCodificar1"
+      		type="button"
+      		onclick= 'irCodificar()'
+      		value="CODIFICAR";
+      		/>
+
+      		<input id= "botonDecodificar1"
+      		type="button"
+      		onclick= 'irDecodificar()'
+      		value="DECODIFICAR";
+      		/>
+        </form>
+      </p>
+
     </div>
+
+    <div id= "paginaCodificar1">
+
+      <p> Escribe tu mensaje <br/>
+          (Recuérda utilizar sólo letras mayúsculas.)
+          <br/>
+
+        <form>
+          <input id= "message"
+          type="textTarea"
+          placeholder="Mensaje"
+          rows= "5"
+          cols= "50"
+          value= ""
+          />
+
+          <br/>
+          <br/>
+
+          Selecciona el número de espacios con los que te gustaría codificar
+          <br/>
+
+          (Recuerda mencionarle el número de espacios a tu amigo)
+          <br/>
+          <br/>
+
+          <input id= "offsetCode"
+          type= "number"
+          placeholder= "Espacios"
+          min= "1"
+          max= "1000"
+          value= ""
+          />
+
+          <br/>
+          <br/>
+
+          <input id= "botonCodificar2"
+      		type="button"
+      		onclick= "codificar()"
+      		value="CODIFICAR";
+      		/>
+        </form>
+      </p>
+    </div>
+
+    <div id= "mensajeCodificado">
+    </div>
+
+    <div id = "mensajeEnviado">
+      <p> ¡Tu mensaje ha sido enviado correctamente!
+      </p>
+
+        <br/>
+        <br/>
+    </div>
+
+    <div id= "paginaDecodificar1">
+
+      <p> Ingresa tu mensaje <br/>
+          (Recuérda utilizar sólo letras mayúsculas.)
+          <br/>
+
+        <form>
+          <input id= "messageCifrado"
+          type="textTarea"
+          placeholder="Mensaje"
+          rows= "5"
+          cols= "50"
+          value= ""
+          />
+
+          <br/>
+          <br/>
+
+          Selecciona el número de espacios con los que te gustaría codificar
+          <br/>
+
+          (Recuerda preguntarle el número de espacios a tu amigo)
+          <br/>
+          <br/>
+
+          <input id= "offsetDecode"
+          type= "number"
+          placeholder= "Espacios"
+          min= "1"
+          max= "1000"
+          value =""
+          />
+
+          <br/>
+          <br/>
+
+          <input id= "botonDecodificar2"
+      		type="button"
+      		onclick= "decodificar()"
+      		value="DECODIFICAR";
+      		/>
+        </form>
+      </p>
+    </div>
+
+    <div id= "mensajeDecodificado">
+    </div>
+
+    <div id= "vuelvePronto">
+
+          ¡Vuelve pronto! =)
+
+          <br/>
+          <br/>
+
+
+    </div>
+
+    <input id= "buttonEnviar"
+    type="button"
+    onclick= "enviar()"
+    value= "ENVIAR"
+    />
+
+    <input id= "iniciar"
+    type="button"
+    onclick= "irInicio ()"
+    value= "INICIO"
+    />
+
+    <center>
+
+      <input id= "buttonReturn"
+      type= "image"
+      style="float:left"
+      src="botonRegresar.png"
+      width="100"
+      height="100"
+      type= "image"
+      oneclick= "paginaAnterior"
+      />
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+   </body>
+
+
 </html>
