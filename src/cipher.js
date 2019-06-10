@@ -2,14 +2,10 @@ window.cipher= {
 
 encode : function (){
 
+  let i =0;
   let string1 = document.getElementById ("message").value;
-  let string2 = document.getElementById("messageCifrado").value;
-
   let offsetCode = parseInt(document.getElementById ("offsetCode").value);
-  let offsetDecode = parseInt(document.getElementById ("offsetDecode").value);
-
   let cifrado = " ";
-  let descifrado = " ";
 
 for (i=0; i< string1.length; i++) {
 
@@ -44,6 +40,11 @@ for (i=0; i< string1.length; i++) {
 
 
 decode : function (){
+
+let i=0;
+let string2 = document.getElementById("messageCifrado").value;
+let offsetDecode = parseInt(document.getElementById ("offsetDecode").value);
+let descifrado = " ";
 
 for (i=0; i< string2.length; i++) {
 
