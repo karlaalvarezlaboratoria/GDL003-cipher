@@ -39,7 +39,8 @@ for (i=0; i< string1.length; i++) {
   console.log (cifrado)
   document.getElementById("mensajeCodificado").innerHTML =
   "Tu mensaje codificado es: <pre>"  + cifrado
-}
+ }
+},
 
 
 decode : function (){
@@ -72,8 +73,8 @@ for (i=0; i< string2.length; i++) {
   document.getElementById("mensajeDecodificado").innerHTML =
   "Tu mensaje decodificado es: <pre>"  + descifrado
   }
+ }
 }
-
 
 /*Decodificar
 let valorMayCode = (valorCodeAscii + 65 - offsetCode) % 26 + 65;
