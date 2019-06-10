@@ -11,7 +11,9 @@ const buttonReturn = document.getElementById("buttonReturn")
 const buttonClose = document.getElementById("buttonClose")
 const buttonEnviar = document.getElementById ("buttonEnviar")
 
-function cerrar() {
+//function cerrar()
+/*
+const cerrar= () => {
   paginaInicio.style.display = "none"
   paginaCodificar1.style.display = "none"
   mensajeCodificado.style.display = "none"
@@ -20,22 +22,25 @@ function cerrar() {
   mensajeDecodificado.style.display = "none"
   vuelvePronto.style.display = "block"
 }
-
-function irCodificar(){
+*/
+//function irCodificar()
+const irCodificar = () => {
 		paginaInicio.style.display = "none"
 	  paginaCodificar1.style.display = "block"
     buttonReturn.style.display = "block"
   }
 
 
-function codificar()  {
+//function codificar()
+const codificar = () => {
     paginaCodificar1.style.display = "none"
     mensajeCodificado.style.display = "block"
     buttonEnviar.style.display = "block"
   }
 
 
-function enviar()  {
+//function enviar()
+const enviar = () => {
     mensajeCodificado.style.display = "none"
     mensajeEnviado.style.display = "block"
     iniciar.style.display = "block"
@@ -43,26 +48,31 @@ function enviar()  {
   }
 
 
-function irDecodificar()  {
+//function irDecodificar()
+const irDecodificar = () => {
     paginaInicio.style.display = "none"
     paginaDecodificar1.style.display = "block"
     buttonReturn.style.display = "block"
   }
 
-function decodificar()  {
+//function decodificar()  ç
+const decodificar = () => {
     paginaDecodificar1.style.display = "none"
     mensajeDecodificado.style.display = "block"
     iniciar.style.display = "block"
   }
 
 
-function irInicio()  {
+//function irInicio()
+const irInicio = () => {
     mensajeEnviado.style.display = "none"
     mensajeDecodificado.style.display = "none"
     vuelvePronto.style.display = "none"
     iniciar.style.display = "none"
     paginaInicio.style.display = "block"
 
-    location.reload();
-
-      }
+    document.getElementById("offsetCode").value= "";
+    document.getElementById("offsetDecode").value= "";
+    document.getElementById("message").value= "";
+    document.getElementById("messageCifrado").value= "";
+  }
