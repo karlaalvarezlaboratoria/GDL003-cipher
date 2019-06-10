@@ -36,9 +36,9 @@ for (i=0; i< string1.length; i++) {
   }
 
   localStorage.getItem("cifrado");
-  console.log (cifrado)
+  console.log (cifrado);
   document.getElementById("mensajeCodificado").innerHTML =
-  "Tu mensaje codificado es: <pre>"  + cifrado
+  "Tu mensaje codificado es: <pre>"  + cifrado;
  }
 },
 
@@ -69,12 +69,12 @@ for (i=0; i< string2.length; i++) {
   }
 
   localStorage.getItem("descifrado");
-  console.log (descifrado)
+  console.log (descifrado);
   document.getElementById("mensajeDecodificado").innerHTML =
-  "Tu mensaje decodificado es: <pre>"  + descifrado
+  "Tu mensaje decodificado es: <pre>"  + descifrado;
   }
  }
-}
+};
 
 /*Decodificar
 let valorMayCode = (valorCodeAscii + 65 - offsetCode) % 26 + 65;
