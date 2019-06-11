@@ -15,8 +15,6 @@
      src="botonCerrar.png"
      width="50"
      height="50"
-     type= "image"
-     oneclick= "cerrar"
      />
 
      <center>
@@ -38,23 +36,19 @@
           para que el pueda descifrarlo con facilidad. ¡Diviértete! =D )
 
          <form>
-      		<input id= "botonCodificar1"
-      		type="button"
-      		onclick= 'irCodificar()'
-      		value="CODIFICAR";
-      		/>
+      		<input id= "botonCodificar"
+          type="button"
+          value="CODIFICAR" />
 
-      		<input id= "botonDecodificar1"
+      		<input id= "botonDecodificar"
       		type="button"
-      		onclick= 'irDecodificar()'
-      		value="DECODIFICAR";
-      		/>
+      		value="DECODIFICAR" />
         </form>
       </p>
 
     </div>
 
-    <div id= "paginaCodificar1">
+    <div id= "paginaCodificar">
 
       <p> Escribe tu mensaje <br/>
           (Recuérda utilizar sólo letras mayúsculas.)
@@ -65,8 +59,7 @@
           type="textTarea"
           placeholder="Mensaje"
           rows= "5"
-          cols= "50"
-          />
+          cols= "50"/>
 
           <br/>
           <br/>
@@ -80,17 +73,14 @@
 
           <input id= "offsetCode"
           type= "text"
-          placeholder= "Espacios"
-          />
+          placeholder= "Espacios"/>
 
           <br/>
           <br/>
 
           <input id= "botonCodificar2"
       		type="button"
-      		onclick= "codificar()"
-      		value="CODIFICAR";
-      		/>
+      		value="CODIFICAR" />
         </form>
       </p>
     </div>
@@ -106,7 +96,7 @@
         <br/>
     </div>
 
-    <div id= "paginaDecodificar1">
+    <div id= "paginaDecodificar">
 
       <p> Ingresa tu mensaje <br/>
           (Recuérda utilizar sólo letras mayúsculas.)
@@ -117,8 +107,7 @@
           type="textTarea"
           placeholder="Mensaje"
           rows= "5"
-          cols= "50"
-          />
+          cols= "50"/>
 
           <br/>
           <br/>
@@ -132,17 +121,14 @@
 
           <input id= "offsetDecode"
           type= "text"
-          placeholder= "Espacios"
-          />
+          placeholder= "Espacios"/>
 
           <br/>
           <br/>
 
           <input id= "botonDecodificar2"
       		type="button"
-      		onclick= "decodificar()"
-      		value="DECODIFICAR";
-      		/>
+      		value="DECODIFICAR" />
         </form>
       </p>
     </div>
@@ -162,27 +148,20 @@
 
     <input id= "buttonEnviar"
     type="button"
-    onclick= "enviar()"
-    value= "ENVIAR"
-    />
+    value= "ENVIAR"/>
 
     <input id= "iniciar"
     type="button"
-    onclick= "irInicio ()"
-    value= "INICIO"
-    />
+    value= "INICIO" />
 
-    <center>
+  </center>
 
       <input id= "buttonReturn"
       type= "image"
       style="float:left"
       src="botonRegresar.png"
       width="100"
-      height="100"
-      type= "image"
-      oneclick= "paginaAnterior"
-      />
+      height="100" />
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

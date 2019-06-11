@@ -1,6 +1,6 @@
 window.cipher= {
 
-encode : function (){
+encode : () => {
 
   let i =0;
   let string1 = document.getElementById ("message").value;
@@ -39,7 +39,7 @@ for (i=0; i< string1.length; i++) {
 },
 
 
-decode : function (){
+decode : () => {
 
 let i=0;
 let string2 = document.getElementById("messageCifrado").value;

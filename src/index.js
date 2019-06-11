@@ -1,15 +1,12 @@
 const paginaInicio = document.getElementById("paginaInicio");
-const paginaCodificar1  = document.getElementById("paginaCodificar1");
+const paginaCodificar  = document.getElementById("paginaCodificar");
 const mensajeCodificado = document.getElementById("mensajeCodificado");
 const mensajeEnviado = document.getElementById("mensajeEnviado");
-const paginaDecodificar1  = document.getElementById("paginaDecodificar1");
+const paginaDecodificar  = document.getElementById("paginaDecodificar");
 const mensajeDecodificado = document.getElementById("mensajeDecodificado");
 const vuelvePronto = document.getElementById("vuelvePronto");
-
-const iniciar = document.getElementById("iniciar");
 const buttonReturn = document.getElementById("buttonReturn");
 //const buttonClose = document.getElementById("buttonClose");
-const buttonEnviar = document.getElementById ("buttonEnviar");
 
 //function cerrar()
 /*
@@ -23,56 +20,65 @@ const cerrar= () => {
   vuelvePronto.style.display = "block"
 }
 */
-//function irCodificar()
+
 const irCodificar = () => {
-		paginaInicio.style.display = "none";
-    paginaCodificar1.style.display = "block";
-    buttonReturn.style.display = "block";
+  paginaInicio.style.display = "none";
+  paginaCodificar.style.display = "block";
+  buttonReturn.style.display = "block";
   };
 
-
-//function codificar()
 const codificar = () => {
-    paginaCodificar1.style.display = "none";
-    mensajeCodificado.style.display = "block";
-    buttonEnviar.style.display = "block";
+  paginaCodificar.style.display = "none";
+  mensajeCodificado.style.display = "block";
+  buttonEnviar.style.display = "block";
   };
 
-
-//function enviar()
 const enviar = () => {
-    mensajeCodificado.style.display = "none";
-    mensajeEnviado.style.display = "block";
-    iniciar.style.display = "block";
-    buttonEnviar.style.display = "none";
+  mensajeCodificado.style.display = "none";
+  mensajeEnviado.style.display = "block";
+  iniciar.style.display = "block";
+  buttonEnviar.style.display = "none";
   };
 
-
-//function irDecodificar()
 const irDecodificar = () => {
-    paginaInicio.style.display = "none";
-    paginaDecodificar1.style.display = "block";
-    buttonReturn.style.display = "block";
+  paginaInicio.style.display = "none";
+  paginaDecodificar.style.display = "block";
+  buttonReturn.style.display = "block";
   };
 
-//function decodificar()  ç
 const decodificar = () => {
-    paginaDecodificar1.style.display = "none";
-    mensajeDecodificado.style.display = "block";
-    iniciar.style.display = "block";
+  paginaDecodificar.style.display = "none";
+  mensajeDecodificado.style.display = "block";
+  iniciar.style.display = "block";
   };
 
-
-//function irInicio()
 const irInicio = () => {
-    mensajeEnviado.style.display = "none";
-    mensajeDecodificado.style.display = "none";
-    vuelvePronto.style.display = "none";
-    iniciar.style.display = "none";
-    paginaInicio.style.display = "block";
+  mensajeEnviado.style.display = "none";
+  mensajeDecodificado.style.display = "none";
+  vuelvePronto.style.display = "none";
+  iniciar.style.display = "none";
+  paginaInicio.style.display = "block";
 
-    document.getElementById("offsetCode").value= "";
-    document.getElementById("offsetDecode").value= "";
-    document.getElementById("message").value= "";
-    document.getElementById("messageCifrado").value= "";
+  document.getElementById("offsetCode").value= "";
+  document.getElementById("offsetDecode").value= "";
+  document.getElementById("message").value= "";
+  document.getElementById("messageCifrado").value= "";
   };
+
+let botonCodificar = document.getElementById("botonCodificar");
+botonCodificar.addEventListener("click", irCodificar);
+
+let botonCodificar2 = document.getElementById("botonCodificar2");
+botonCodificar2.addEventListener("click", codificar);
+
+let buttonEnviar = document.getElementById("buttonEnviar");
+buttonEnviar.addEventListener("click", enviar);
+
+let botonDecodificar = document.getElementById("botonDecodificar");
+botonDecodificar.addEventListener("click", irDecodificar);
+
+let botonDecodificar2 = document.getElementById("botonDecodificar2");
+botonDecodificar2.addEventListener("click", decodificar);
+
+let iniciar = document.getElementById("iniciar");
+iniciar.addEventListener("click", irInicio);
