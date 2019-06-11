@@ -31,6 +31,8 @@ const codificar = () => {
   paginaCodificar.style.display = "none";
   mensajeCodificado.style.display = "block";
   buttonEnviar.style.display = "block";
+  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <pr>"
+  + window.cipher.encode();
   };
 
 const enviar = () => {
@@ -50,6 +52,8 @@ const decodificar = () => {
   paginaDecodificar.style.display = "none";
   mensajeDecodificado.style.display = "block";
   iniciar.style.display = "block";
+  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <pr>"
+  + window.cipher.decode();
   };
 
 const irInicio = () => {
