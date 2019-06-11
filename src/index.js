@@ -31,8 +31,11 @@ const codificar = () => {
   paginaCodificar.style.display = "none";
   mensajeCodificado.style.display = "block";
   buttonEnviar.style.display = "block";
-  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <pr>"
-  + window.cipher.encode();
+
+  let string1 = document.getElementById ("message").value;
+  let offsetCode = parseInt(document.getElementById ("offsetCode").value);
+  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <br>"
+  + window.cipher.encode(offsetCode, string1);
   };
 
 const enviar = () => {
@@ -52,8 +55,12 @@ const decodificar = () => {
   paginaDecodificar.style.display = "none";
   mensajeDecodificado.style.display = "block";
   iniciar.style.display = "block";
-  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <pr>"
-  + window.cipher.decode();
+
+  let string2 = document.getElementById("messageCifrado").value;
+  let offsetDecode = parseInt(document.getElementById ("offsetDecode").value);
+
+  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <br>"
+  + window.cipher.decode(offsetDecode, string2);
   };
 
 const irInicio = () => {
