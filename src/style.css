@@ -1,6 +1,5 @@
-#iniciar, #mensajeDecodificado, #paginaDecodificar1,
-#vuelvePronto, #mensajeEnviado, #mensajeCodificado,
-#paginaCodificar1, #buttonReturn, #buttonEnviar {
+#paginaCodificar, #mensajeCodificado,  #mensajeEnviado, #paginaDecodificar, #mensajeDecodificado,
+#vuelvePronto, #buttonEnviar, #iniciar, #buttonReturn {
   display: none
 }
 
