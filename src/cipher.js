@@ -29,14 +29,12 @@ for (i=0; i< string1.length; i++) {
 
     let espacio = " ";
     cifrado+=espacio;
+    console.log ("cifrado");
   }
-
-  localStorage.getItem("cifrado");
-  console.log (cifrado);
-  document.getElementById("mensajeCodificado").innerHTML =
-  "Tu mensaje codificado es: <pre>"  + cifrado;
  }
+ return cifrado;
 },
+
 
 
 decode : () => {
@@ -68,12 +66,10 @@ for (i=0; i< string2.length; i++) {
     let espacio = " ";
     descifrado+=espacio;
   }
-
-  localStorage.getItem("descifrado");
-  console.log (descifrado);
-  document.getElementById("mensajeDecodificado").innerHTML =
-  "Tu mensaje decodificado es: <pre>"  + descifrado;
   }
+  console.log("decode");
+  return descifrado;
+
  }
 };
 
