@@ -3,4 +3,58 @@
   display: none
 }
 
-#body {
+body {
+	background-image: url("mariposas3.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+/*
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 9px;
+    border: 1px solid #2b27a1;
+    border-radius: 8px;
+    background: #6e4aff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6e4aff), to(#57cfc5));
+    background: -moz-linear-gradient(top, #6e4aff, #57cfc5);
+    background: linear-gradient(to bottom, #6e4aff, #57cfc5);
+    -webkit-box-shadow: #ff5959 0px 0px 40px 0px;
+    -moz-box-shadow: #ff5959 0px 0px 40px 0px;
+    box-shadow: #ff5959 0px 0px 40px 0px;
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #453eff;
+    background: #8459ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8459ff), to(#68f8ec));
+    background: -moz-linear-gradient(top, #8459ff, #68f8ec);
+    background: linear-gradient(to bottom, #8459ff, #68f8ec);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #422c99;
+    background: -webkit-gradient(linear, left top, left bottom, from(#422c99), to(#57cfc5));
+    background: -moz-linear-gradient(top, #422c99, #57cfc5);
+    background: linear-gradient(to bottom, #422c99, #57cfc5);
+}
+.button:after{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 -4px -6px 4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA2ElEQVRIib2VYQrDMAiFP0LOV3alHWT0puv+GEhFU1/ZJgiGJE99MQrQTB9An9Z3tRvWWNOAJ3AAL+cE0e6GcRhmw7wdkw4nTAAVewYfumUb++SkIt3uhIH61PyBCueru6cU0ygEWk7g/mKVrhF5KSA1ZZXSUwaV6Eq0ZBTNktGlvpNcIWqlhRTNdkTXJS0ZOMA7sb204Exo+37yN4qyarn1yF7UMl32rlXL/fpHUz6R1CquaMmkRNfP27XcWwJ7mf1qZCqSjszV0Fc1HPpjcxNpyexuWA3gA2bgqmtIjPJlAAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+*/

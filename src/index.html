@@ -9,159 +9,95 @@
 
    <body>
 
-     <input id= "buttonClose"
-     type= "image"
-     style="float:right"
-     src="botonCerrar.png"
-     width="50"
-     height="50"
-     />
+<!--     <button id= "buttonClose"> X </button> -->
 
-     <center>
+     <section id= "paginaInicio">
 
-     <div id= "paginaInicio">
+        <header> CRYPTOGRAMAFUN </header>
 
-       <br/>
-       <br/>
-
-      <h1> CRYPTOGRAMAFUN </h1>
-
-      <p> Bienvenido al mensajero más seguro y divertido de la Web.
+          <p id= "bienvenida"> Bienvenido al mensajero más seguro y divertido de la Web.
           ¿Quieres enviar un mensaje súper seguro y de una forma súper
-          divertida? ¡Hagámoslo!
-            <br/>
+          divertida? ¡Hagámoslo!</br> </br>
+
           (RECUERDA: Puedes utilizar letras mayúsculas y minúsculas,
-          evita los signos de puntuación y los acentos. <br/>
+          evita los signos de puntuación y los acentos.</br>
           Comparte con tu compañero el número de espacios con el que planeas cifrar
-          para que el pueda descifrarlo con facilidad. ¡Diviértete! =D )
+          para que el pueda descifrarlo con facilidad.) </br></br> ¡Diviértete! =D
+        </p>
 
-         <form>
-      		<input id= "botonCodificar"
-          type="button"
-          value="CODIFICAR" />
+          <button id= "botonCodificar"> CODIFICAR </button>
+          <button id= "botonDecodificar"> DECODIFICAR </button>
+     </section>
 
-      		<input id= "botonDecodificar"
-      		type="button"
-      		value="DECODIFICAR" />
-        </form>
-      </p>
+     <section id= "paginaCodificar">
 
-    </div>
+        <p> Escribe tu mensaje </p>
 
-    <div id= "paginaCodificar">
+        <input id= "message"
+         type="textArea"
+         placeholder="Mensaje"
+         rows= "5"
+         cols= "50"/>
 
-      <p> Escribe tu mensaje <br/>
-          (Recuérda utilizar sólo letras mayúsculas.)
-          <br/>
-
-        <form>
-          <input id= "message"
-          type="textTarea"
-          placeholder="Mensaje"
-          rows= "5"
-          cols= "50"/>
-
-          <br/>
-          <br/>
-
-          Selecciona el número de espacios con los que te gustaría codificar
-          <br/>
-
+        <p>Selecciona el número de espacios con los que te gustaría codificar
+           <br/>
           (Recuerda mencionarle el número de espacios a tu amigo)
-          <br/>
-          <br/>
+        </p>
 
-          <input id= "offsetCode"
-          type= "text"
-          placeholder= "Espacios"/>
+        <input id= "offsetCode"
+         type= "text"
+         placeholder= "Espacios"/>
 
-          <br/>
-          <br/>
+       </br>
 
-          <input id= "botonCodificar2"
-      		type="button"
-      		value="CODIFICAR" />
-        </form>
-      </p>
-    </div>
+        <button id= "botonCodificar2"> CODIFICAR </button>
+     </section>
 
-    <div id= "mensajeCodificado">
-    </div>
+     <section id= "mensajeCodificado">
+     </section>
 
-    <div id = "mensajeEnviado">
-      <p> ¡Tu mensaje ha sido enviado correctamente!
-      </p>
+     <section id = "mensajeEnviado">
+        <p> ¡Tu mensaje ha sido enviado correctamente! </p>
 
-        <br/>
-        <br/>
-    </div>
+     </section>
 
-    <div id= "paginaDecodificar">
+     <section id= "paginaDecodificar">
 
-      <p> Ingresa tu mensaje <br/>
-          (Recuérda utilizar sólo letras mayúsculas.)
-          <br/>
+        <p> Ingresa tu mensaje </p>
 
-        <form>
-          <input id= "messageCifrado"
-          type="textTarea"
-          placeholder="Mensaje"
-          rows= "5"
-          cols= "50"/>
+        <input id= "messageCifrado"
+         type="textArea"
+         placeholder="Mensaje"
+         rows= "50"
+         cols= "50"/>
 
-          <br/>
-          <br/>
-
-          Selecciona el número de espacios con los que te gustaría codificar
-          <br/>
-
-          (Recuerda preguntarle el número de espacios a tu amigo)
-          <br/>
-          <br/>
+        <p> Selecciona el número de espacios con los que te gustaría codificar
+            <br/>
+            (Recuerda preguntarle el número de espacios a tu amigo)
+        </p>
 
           <input id= "offsetDecode"
           type= "text"
           placeholder= "Espacios"/>
 
-          <br/>
-          <br/>
+        </br>
 
-          <input id= "botonDecodificar2"
-      		type="button"
-      		value="DECODIFICAR" />
-        </form>
-      </p>
-    </div>
+          <button id= "botonDecodificar2"> DECODIFICAR </button>
+     </section>
 
-    <div id= "mensajeDecodificado">
-    </div>
+     <section id= "mensajeDecodificado">
+     </section>
 
-    <div id= "vuelvePronto">
+     <section id= "vuelvePronto">
 
-          ¡Vuelve pronto! =)
+        <p> ¡Vuelve pronto! =) </p>
+     </section>
 
-          <br/>
-          <br/>
-
-
-    </div>
-
-    <input id= "buttonEnviar"
-    type="button"
-    value= "ENVIAR"/>
-
-    <input id= "iniciar"
-    type="button"
-    value= "INICIO" />
-
-  </center>
-
-      <input id= "buttonReturn"
-      type= "image"
-      style="float:left"
-      src="botonRegresar.png"
-      width="100"
-      height="100" />
+     <section id= "botones">
+        <button id= "buttonEnviar"> ENVIAR </button>
+        <button id= "iniciar"> INICIAR </button>
+<!--        <button id= "buttonReturn">O</button> -->
+     </section>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
