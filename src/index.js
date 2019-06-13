@@ -34,7 +34,7 @@ const codificar = () => {
 
   let string1 = document.getElementById ("message").value;
   let offsetCode = parseInt(document.getElementById ("offsetCode").value);
-  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <br>"
+  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <br><br><br>"
   + window.cipher.encode(offsetCode, string1);
   };
 
@@ -59,7 +59,7 @@ const decodificar = () => {
   let string2 = document.getElementById("messageCifrado").value;
   let offsetDecode = parseInt(document.getElementById ("offsetDecode").value);
 
-  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <br>"
+  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <br><br><br>"
   + window.cipher.decode(offsetDecode, string2);
   };
 

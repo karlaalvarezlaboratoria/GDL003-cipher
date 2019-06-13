@@ -7,6 +7,62 @@ body {
 	background-image: url("mariposas3.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
+  text-align: right;
+  text-align: justify;
+  color: #fcfafa;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+}
+
+header {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 2em;
+}
+
+/*#bienvenida {
+  text-align: justify;
+} */
+
+section {
+  padding-top: 2em;
+  width: 20em;
+  height: 10em;
+  margin-top: 3em;
+  margin-left: 41em;
+
+/*border: solid; */
+}
+
+input {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+button {
+   background: linear-gradient(to bottom, #de49f5, #0e16b0);
+   font: normal normal bold 20px verdana;
+   color: #ffffff;
+   border: 1px solid #1a3ca1;
+   border-radius: 28px;
+   margin: 1em 1em 1em 1em;
+}
+
+button:hover {
+   background: linear-gradient(to bottom, #f79cf4, #3023eb);
+   color: #4f49ad;
+}
+
+#iniciar, #buttonEnviar, #buttonReturn {
+  align: right;
+}
+
+
+#buttonClose {
+  width= "50";
+  height= "50";
 }
 /*
 .button {
