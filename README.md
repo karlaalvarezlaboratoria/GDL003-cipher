@@ -9,7 +9,7 @@ Esta primera versión se aprecia correctamente sólo en computadora.
 
 El diseño está pensado en que sea sencillo de utilizar e intuitivo. Puede utilizarlo cualquier persona que desee enviar mensajes en clave ya sea por necesidad o diversión.
 
-Actualmente el programa resuelve los problemas de cifrado y descifrado de un mensaje utilizando el "cifrado César."
+Actualmente el programa resuelve los problemas de cifrado y descifrado de un mensaje utilizando el "cifrado César", y permitiendo que el usuario elija la cantidad de espacios (offset) con los que desea cifrar-descifrar.
 
 ### ¿Qué es el "Cifrado César"?
 
@@ -44,7 +44,7 @@ Ingresa a la liga: https://karlaalvarezlaboratoria.github.io/GDL003-cipher/src/
 
 Una vez en el programa tendrás la opción de ingresar a la página de cifrado o descifrado del mensaje.
 
-Con tu compañero de mensajes determinen previamente el numero de offset (espacios) que desean utilizar para cifrar o descifrar su mensaje.
+Con tu compañer@ de mensajes determinen previamente el numero de offset (espacios) que desean utilizar para cifrar o descifrar su mensaje.
 
 Ingresa tu mensaje en la caja de texto (puedes utilizar mayúsculas, minúsculas y espacios) y define el número de offset, a continuación presiona el botón "CIFRAR" O "DESCIFRAR", esto te arrojará el texto modificado.
 
