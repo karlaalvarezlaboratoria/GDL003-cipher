@@ -1,3 +1,4 @@
+
 window.cipher= {
 
 encode : (offsetCode, string1) => {
@@ -32,7 +33,6 @@ for (i=0; i< string1.length; i++) {
  }
  return cifrado;
 },
-
 
 
 decode : (offsetDecode, string2) => {
