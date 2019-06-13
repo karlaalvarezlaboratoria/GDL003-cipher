@@ -6,10 +6,12 @@ const paginaDecodificar  = document.getElementById("paginaDecodificar");
 const mensajeDecodificado = document.getElementById("mensajeDecodificado");
 const vuelvePronto = document.getElementById("vuelvePronto");
 const buttonReturn = document.getElementById("buttonReturn");
-//const buttonClose = document.getElementById("buttonClose");
 
-//function cerrar()
-/*
+/* AVANCE DE IMPLEMENTACIÓN PARA SEGUNDA ITERACIÓN
+const buttonClose = document.getElementById("buttonClose");
+
+function cerrar()
+
 const cerrar= () => {
   paginaInicio.style.display = "none"
   paginaCodificar1.style.display = "none"
@@ -34,8 +36,7 @@ const codificar = () => {
 
   let string1 = document.getElementById ("message").value;
   let offsetCode = parseInt(document.getElementById ("offsetCode").value);
-  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <br><br><br>"
-  + window.cipher.encode(offsetCode, string1);
+  document.getElementById("mensajeCodificado").innerHTML = "Tu mensaje codificado es: <br><br><br>" + window.cipher.encode(offsetCode, string1);
   };
 
 const enviar = () => {
