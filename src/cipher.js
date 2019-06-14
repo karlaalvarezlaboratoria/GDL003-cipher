@@ -1,67 +1,69 @@
 window.cipher= {
 
-encode : (offsetCode, textToEncode) => {
+encode : (offsetCode, string1) => {
 
-  let letter =0;
-  let cipherText = "";
+  let i =0;
+  let cifrado = "";
 
-for (letter=0; letter< textToEncode.length; letter++) {
+for (i=0; i< string1.length; i++) {
 
-  let valorCodeAscii = textToEncode.charCodeAt(letter);
+  let valorCodeAscii = string1.charCodeAt(i);
 
   if (valorCodeAscii >= 65 && valorCodeAscii <= 90){
 
     let valorMayCode = (valorCodeAscii - 65 +  offsetCode) % 26 + 65;
     let mensCodeMay = String.fromCharCode (valorMayCode);
-    cipherText+= mensCodeMay;
+    cifrado+= mensCodeMay;
   }
 
   else if (valorCodeAscii >=97 && valorCodeAscii <=122) {
 
     let valorMinCode = (valorCodeAscii - 97 + offsetCode) % 26 + 97;
     let mensCodeMinus = String.fromCharCode (valorMinCode);
-    cipherText+= mensCodeMinus;
+    cifrado+= mensCodeMinus;
   }
 
   else if (valorCodeAscii == 32){
 
-    let space = " ";
-    cipherText += space;
+    let espacio = " ";
+    cifrado += espacio;
+    console.log ("cifrado");
   }
  }
- return cipherText;
+ return cifrado;
 },
 
 
-decode : (offsetDecode, textToDecode) => {
+decode : (offsetDecode, string2) => {
 
-let letter=0;
-let descipherText = "";
+let i=0;
+let descifrado = "";
 
-for (letter=0; letter< textToDecode.length; letter++) {
+for (i=0; i< string2.length; i++) {
 
-  let valorCodeAscii = textToDecode.charCodeAt(letter);
+  let valorCodeAscii = string2.charCodeAt(i);
   if (valorCodeAscii >= 65 && valorCodeAscii <= 90){
 
     let valorMayCode = (valorCodeAscii + 65 -  offsetDecode) % 26 + 65;
     let mensCodeMay = String.fromCharCode (valorMayCode);
-    descipherText+= mensCodeMay;
+    descifrado+= mensCodeMay;
   }
 
   else if (valorCodeAscii >=97 && valorCodeAscii <=122) {
 
-    let valorMinCode = (valorCodeAscii -122 - offsetDecode) % 26 + 122;
+    let valorMinCode = (valorCodeAscii + 97 - offsetDecode +14) % 26 + 97;
     let mensCodeMinus = String.fromCharCode (valorMinCode);
-    descipherText+= mensCodeMinus;
+    descifrado+= mensCodeMinus;
   }
 
   else if (valorCodeAscii == 32){
 
-    let space = " ";
-    descipherText+=space;
+    let espacio = " ";
+    descifrado+=espacio;
   }
   }
-  return descipherText;
+  console.log("decode");
+  return descifrado;
 
  }
 };
