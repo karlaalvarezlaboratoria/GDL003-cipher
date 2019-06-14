@@ -8,27 +8,27 @@
    </head>
 
    <body>
-<!-- AVANCE DE IMPLEMENTACIÓN PARA SEGUNDA ITERACIÓN
-     <button id= "buttonClose"> X </button> -->
-     <section id= "homePage">
+
+<!--     <button id= "buttonClose"> X </button> -->
+
+     <section id= "paginaInicio">
 
         <header> CRYPTOGRAMAFUN </header>
 
-          <p id= "welcome"> Bienvenido al mensajero más seguro y divertido de la Web.
+          <p id= "bienvenida"> Bienvenido al mensajero más seguro y divertido de la Web.
           ¿Quieres enviar un mensaje súper seguro y de una forma súper
-          divertida? ¡Hagámoslo!</br> </br>
-
+          divertida? ¡Hagámoslo! <br/><br/>
           (RECUERDA: Puedes utilizar letras mayúsculas y minúsculas,
-          evita los signos de puntuación y los acentos.</br>
-          Comparte con tu compañer@ el número de espacios con el que planeas cifrar
-          para que pueda descifrarlo con facilidad.) </br></br> ¡Diviértete! =D
-        </p>
+          evita los signos de puntuación y los acentos. <br/>
+          Comparte con tu compañero el número de espacios con el que planeas cifrar
+          para que el pueda descifrarlo con facilidad.) <br/><br/> ¡Diviértete! =D
+          </p>
 
-          <button id= "encode"> CODIFICAR </button>
-          <button id= "decode"> DECODIFICAR </button>
+          <button id= "botonCodificar"> CODIFICAR </button>
+          <button id= "botonDecodificar"> DECODIFICAR </button>
      </section>
 
-     <section id= "encodePage">
+     <section id= "paginaCodificar">
 
         <p> Escribe tu mensaje </p>
 
@@ -40,63 +40,62 @@
 
         <p>Selecciona el número de espacios con los que te gustaría codificar
            <br/>
-          (Recuerda mencionarle el número de espacios a tu amig@)
+          (Recuerda mencionarle el número de espacios a tu amigo)
         </p>
 
         <input id= "offsetCode"
          type= "text"
          placeholder= "Espacios"/>
 
-       </br>
+       <br/>
 
-        <button id= "buttonEncode"> CODIFICAR </button>
+        <button id= "botonCodificar2"> CODIFICAR </button>
      </section>
 
-     <section id= "encodeMessege">
+     <section id= "mensajeCodificado">
      </section>
 
-     <section id = "sendMessage">
+     <section id = "mensajeEnviado">
         <p> ¡Tu mensaje ha sido enviado correctamente! </p>
 
      </section>
 
-     <section id= "decodePage">
+     <section id= "paginaDecodificar">
 
         <p> Ingresa tu mensaje </p>
 
-        <input id= "messageToDecode"
+        <input id= "messageCifrado"
          type="textArea"
          placeholder="Mensaje"
          rows= "50"
          cols= "50"/>
 
-        <p> Selecciona el número de espacios con los que te gustaría decodificar
+        <p> Selecciona el número de espacios con los que te gustaría codificar
             <br/>
-            (Recuerda preguntarle el número de espacios a tu amig@)
+            (Recuerda preguntarle el número de espacios a tu amigo)
         </p>
 
           <input id= "offsetDecode"
           type= "text"
           placeholder= "Espacios"/>
 
-        </br>
+        <br/>
 
-          <button id= "buttonDecode"> DECODIFICAR </button>
+          <button id= "botonDecodificar2"> DECODIFICAR </button>
      </section>
 
-     <section id= "decodeMessage">
+     <section id= "mensajeDecodificado">
      </section>
 
-     <section id= "comeBack">
+     <section id= "vuelvePronto">
 
         <p> ¡Vuelve pronto! =) </p>
      </section>
 
-     <section id= "extraButtons">
-        <button id= "sendButton"> ENVIAR </button>
-        <button id= "backToTop"> INICIAR </button>
-<!-- AVANCE DE IMPLEMENTACIÓN PARA SEGUNDA ITERACIÓN
-       <button id= "buttonReturn">O</button> -->
+     <section id= "botones">
+        <button id= "buttonEnviar"> ENVIAR </button>
+        <button id= "iniciar"> INICIAR </button>
+<!-- AVANCE PARA SEGUNDA ITERACIÓN       <button id= "buttonReturn">O</button> -->
      </section>
 
     <script src="cipher.js"></script>
