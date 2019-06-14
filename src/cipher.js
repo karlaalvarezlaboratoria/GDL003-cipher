@@ -1,4 +1,3 @@
-
 window.cipher= {
 
 encode : (offsetCode, string1) => {
@@ -28,7 +27,6 @@ for (i=0; i< string1.length; i++) {
 
     let espacio = " ";
     cifrado += espacio;
-    console.log ("cifrado");
   }
  }
  return cifrado;
@@ -52,7 +50,7 @@ for (i=0; i< string2.length; i++) {
 
   else if (valorCodeAscii >=97 && valorCodeAscii <=122) {
 
-    let valorMinCode = (valorCodeAscii + 97 - offsetDecode) % 26 + 97;
+    let valorMinCode = (valorCodeAscii -122 - offsetDecode) % 26 + 122;
     let mensCodeMinus = String.fromCharCode (valorMinCode);
     descifrado+= mensCodeMinus;
   }
@@ -63,12 +61,7 @@ for (i=0; i< string2.length; i++) {
     descifrado+=espacio;
   }
   }
-  console.log("decode");
   return descifrado;
 
  }
 };
-
-/*Decodificar
-let valorMayCode = (valorCodeAscii + 65 - offsetCode) % 26 + 65;
-*/
