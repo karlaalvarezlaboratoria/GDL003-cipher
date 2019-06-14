@@ -27,7 +27,6 @@ for (i=0; i< string1.length; i++) {
 
     let espacio = " ";
     cifrado += espacio;
-    console.log ("cifrado");
   }
  }
  return cifrado;
@@ -62,7 +61,6 @@ for (i=0; i< string2.length; i++) {
     descifrado+=espacio;
   }
   }
-  console.log("decode");
   return descifrado;
 
  }
