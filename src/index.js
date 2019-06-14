@@ -7,7 +7,7 @@ const mensajeDecodificado = document.getElementById("mensajeDecodificado");
 const vuelvePronto = document.getElementById("vuelvePronto");
 const buttonReturn = document.getElementById("buttonReturn");
 
-/* AVANCE DE IMPLEMENTACIÓN PARA SEGUNDA ITERACIÓN
+/* AVANCE DE IMPLEMENTACION PARA SEGUNDA ITERACIÒN
 const buttonClose = document.getElementById("buttonClose");
 
 function cerrar()
@@ -60,8 +60,7 @@ const decodificar = () => {
   let string2 = document.getElementById("messageCifrado").value;
   let offsetDecode = parseInt(document.getElementById ("offsetDecode").value);
 
-  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <br><br><br>"
-  + window.cipher.decode(offsetDecode, string2);
+  document.getElementById("mensajeDecodificado").innerHTML = "Tu mensaje decodificado es: <br><br><br>" + window.cipher.decode(offsetDecode, string2);
   };
 
 const irInicio = () => {
